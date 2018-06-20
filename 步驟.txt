@@ -17,3 +17,4 @@ python arper.py         #執行程式
 
 重回 Windows 10 CMD 查詢
 arp -a                  #重新查詢目標電腦的MAC位址，可以發現MAC位址改變了  ==> 192.168.254.2         00-0c-29-29-27-c2     dynamic
+                                ==>會在Chapter4的目錄中產生arper.pcap的PCAP檔
