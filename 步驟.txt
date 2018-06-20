@@ -1,0 +1,7 @@
+# ARP-Cache-Poisoning-with-Scapy
+網路攻防期末作業-第二題
+
+
+在 Windows 10 CMD查詢
+ipconfig                #查詢目標電腦IP、gateway IP  ==> Default Gateway . . . . . . . . . : 192.168.254.2
+arp -a                  #查詢目標電腦的MAC位址    ==> 192.168.254.2         00-50-56-ff-bc-08     dynamic
