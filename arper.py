@@ -6,6 +6,13 @@ target_ip = sys.argv[2]
 gateway_ip = sys.argv[3]
 packet_count = 1000
 
+====>以上4列改為：
+interface    = "en1"
+target_ip    = "192.168.254.129"    #目標windows 10
+gateway_ip   = "192.168.254.2"
+packet_count = 1000
+poisoning    = True
+
 conf.iface = interface # set up the interface
 conf.verb = 0 # turn off output
 
