@@ -9,10 +9,10 @@ arp -a                  #查詢目標電腦的MAC位址       ==> 192.168.254.2 
 
 在 Kali VM 上
 ifconfig                                  #查詢Interface
-gedit arper.py                            #開啟檔案，修改Interface、目標機器IP、gateway IP
-echo 1 > /proc/sys/net/ipv4/ip_forward    #讓本機知道我們可以為gateway與目標IP位址轉發封包
 ls
 cd
+gedit arper.py                            #開啟檔案，修改Interface、目標機器IP、gateway IP
+echo 1 > /proc/sys/net/ipv4/ip_forward    #讓本機知道我們可以為gateway與目標IP位址轉發封包
 python arper.py         #執行程式
 
 重回 Windows 10 CMD 查詢
