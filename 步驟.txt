@@ -2,6 +2,16 @@
 網路攻防期末作業-第二題
 
 
-在 Windows 10 CMD查詢
-ipconfig                #查詢目標電腦IP、gateway IP  ==> Default Gateway . . . . . . . . . : 192.168.254.2
-arp -a                  #查詢目標電腦的MAC位址    ==> 192.168.254.2         00-50-56-ff-bc-08     dynamic
+在 Windows 10 CMD 查詢
+ipconfig                #查詢目標電腦IP、gateway IP  ==> IPv4 Address. . . . . . . . . . . : 192.168.254.129
+                                                        Default Gateway . . . . . . . . . : 192.168.254.2
+arp -a                  #查詢目標電腦的MAC位址       ==> 192.168.254.2         00-50-56-ff-bc-08     dynamic
+
+在 Kali VM 上
+echo 1 > /proc/sys/net/ipv4/ip_forward    #讓本機知道我們可以為gateway與目標IP位址轉發封包
+ls
+cd
+python arper.py         #執行程式
+
+重回 Windows 10 CMD 查詢
+arp -a                  #重新查詢目標電腦的MAC位址
