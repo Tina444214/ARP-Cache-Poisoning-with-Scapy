@@ -7,7 +7,7 @@ gateway_ip = sys.argv[3]
 packet_count = 1000
 
 ====>以上4列改為：
-interface    = "eth1"
+interface    = "eth0"
 target_ip    = "192.168.254.129"    #目標windows 10
 gateway_ip   = "192.168.254.2"
 packet_count = 1000
